@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://b1vywpd3527i2"]
+[gd_scene load_steps=4 format=3 uid="uid://b1vywpd3527i2"]
 
 [ext_resource type="Texture2D" uid="uid://bl6nvvhdieq6v" path="res://Backgrounds/purple.png" id="1_k5f4k"]
 [ext_resource type="PackedScene" uid="uid://c4d5mgrejj7iu" path="res://Scenes/player.tscn" id="1_tumq0"]
+[ext_resource type="PackedScene" uid="uid://dhstk1lrkwsm1" path="res://Scenes/meteor.tscn" id="3_6phgx"]
 
 [node name="Level" type="Node2D"]
 
@@ -11,3 +12,7 @@ scale = Vector2(4.89062, 2.77734)
 texture = ExtResource("1_k5f4k")
 
 [node name="Player" parent="." instance=ExtResource("1_tumq0")]
+position = Vector2(485, 393)
+
+[node name="Meteor" parent="." instance=ExtResource("3_6phgx")]
+position = Vector2(991, 125)
